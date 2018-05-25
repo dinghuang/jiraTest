@@ -35,7 +35,9 @@ import java.util.concurrent.locks.Lock;
  */
 @Service
 public class LexoRankBalancer {
+
     private static final int LAZY_INDEX_QUEUE_LIMIT = 64;
+
     protected final LoggerWrapper log = LoggerWrapper.with(this.getClass());
     @Autowired
     private LexoRankDao lexoRankDao;

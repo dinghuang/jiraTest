@@ -17,6 +17,8 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
+ * 平衡处理程序
+ *
  * @author dinghuang123@gmail.com
  * @since 2018/5/23
  */
@@ -26,7 +28,7 @@ public class LexoRankScheduledBalanceHandler implements Runnable {
     @Autowired
     private BalancerEntryManager balancerEntryManager;
     @Autowired
-    private com.atlassian.greenhopper.service.lexorank.balance.LexoRankBalancer lexoRankBalancer;
+    private LexoRankBalancer lexoRankBalancer;
     @Autowired
     private ErrorCollectionTransformer errorCollectionTransformer;
     private volatile boolean isRunning;
